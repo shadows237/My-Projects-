@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #edc7c7;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 18px auto;
+        }
+
+        .profile {
+            flex: 1;
+            background-color: #cdcfed;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .profile:hover {
+            transform: scale(1.05);
+        }
+
+        .profile img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .profile-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .profile h2 {
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .profile p {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .profile span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <a href="#" class="profile">
+            <img src="WhatsApp Image 2024-02-22 at 22.13.35_5dcf377b.jpg" alt="Person 1">
+            <div class="profile-content">
+                <h2>Amarnath Bera</h2>
+                <p><span>Field of Interest:</span> Full stack Developing </p>
+                <p><span>Skils: </span>C & C++, HTML, CSS, PHP</p>
+
+                <p> <span>Undergraduate</span><br> B.C.A. in Computer Application(Current), <br>Vidyasgar University. <br>
+                    <!-- <p><Span>Felt In</Span> B.Sc in Chemitsry, Calcutta University </p>  -->
+                <p><span>Schools:</span> Higher Secondary, 2020 <br> (Vidyasgar Vidyapith) <br>
+                    Secondary, 2018 <br> (Naipur Shanti sudha Institution)</p>
+                <p><span>Address:</span> Egra, Purba Medinipur, WB, 721439</p>
+                <p><span>Email:</span> beraamarnath5@gmail.com</p>
+                <p><span>Phone:</span> +91 9832349425</p>
+            </div>
+        </a>
+
+        <a href="#" class="profile">
+            <img src="WhatsApp Image 2024-02-22 at 21.53.49_ca6131f3.jpg" alt="Person 2">
+            <div class="profile-content">
+                <h2>Suvndu Das Adhikari</h2>
+                <p><span>Field of Interest:</span> Backend Developing </p>
+                <p><span>Skils: </span>C & C++, Java, PHP</p>
+
+                <p> <span>Undergraduate</span><br> B.tech in Computer Science and Engineering(Current), <br>Vidyasgar University. <br></p>
+                <!-- <p><Span>Felt In</Span> B.Sc in Physics, vidyasagar University </p> -->
+                <p><span>Schools:</span> Higher Secondary, 2020 <br>
+                  &  Secondary, 2018 <br> (Naipur Shanti sudha Institution)</p>
+                <p><span>Address:</span> Egra, Purba Medinipur, WB, 721439</p>
+                <p><span>Email:</span> suvdasadhikari@gmail.com</p>
+                <p><span>Phone:</span> +91 7501142223</p>
+               
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

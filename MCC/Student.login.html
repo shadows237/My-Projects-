@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Submission Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6b9b9;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #95a7d1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container input, .form-container button {
+      width: calc(100% - 20px);
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: #555;
+      transition: border-color 0.3s;
+    }
+
+    .form-container input:focus, .form-container button:focus {
+      border-color: #4caf50;
+    }
+
+    .form-container button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #45a049;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .section-options {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .section-option {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: #555;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+      display: block;
+    }
+
+    .section-option input {
+      display: none;
+    }
+
+    .section-option input:checked + label {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .file-input-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .file-input {
+      width: 100%;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .file-input input {
+      font-size: 16px;
+      opacity: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Component Submission Form</h2>
+    <form action="student_data.php" method="post" >
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="roll" placeholder="Roll" required>
+      
+      <tr>
+        <td>Section: </td>
+        <td>
+            <select name="sec">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select>
+        </td>
+    </tr>
+
+      <div class="file-input-container">
+        <td><input type="file" name="upFile" accept=".pdf, .doc, .docx" placeholder="UPLODE FILE"></td>      </div>
+      
+        <div style="margin-top: 20px; padding: 10px; text-align: center;">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </div>    </form>
+  </div>
+
+</body>
+</html>
