@@ -34,6 +34,23 @@ body{
     margin-top: -10px;
     margin-left: 120px;
 }
+#btn{
+    margin-top: -272px;
+    margin-left: 8in;
+}
+.modal-header{
+    margin-bottom: -1px;
+    background-color: rgba(188, 120, 91, 0.619);
+}
+.modal-body{
+    background-color: rgba(189, 137, 115, 0.653);
+
+}
+.modal-footer{
+    background-color: rgba(188, 120, 91, 0.719);
+    margin-top: -1px;
+
+}
 #negivation{
     margin-top: -130px;
 
